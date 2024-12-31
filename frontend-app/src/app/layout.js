@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/App-sidebar"
 import { ThemeProvider } from "@/components/Theme-provider";
@@ -102,7 +101,7 @@ export default function RootLayout({ children }) {
           <WalletProvider>
             <SidebarProvider >
               <AppSidebar />
-              <SidebarTrigger />
+              <SidebarTrigger className="scale-150 mt-5" />
               {children}
             </SidebarProvider>
           </WalletProvider>
